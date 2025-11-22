@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Tell Google where sitemap is located
-Sitemap: https://your-domain.vercel.app/sitemap.xml
+Sitemap: https://agro-tourism-by-the-lake.vercel.app/sitemap.xml
