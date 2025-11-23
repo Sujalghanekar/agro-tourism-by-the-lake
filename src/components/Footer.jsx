@@ -8,7 +8,6 @@ import {
   FaLocationDot,
 } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -31,7 +30,7 @@ export default function Footer() {
           {/* ABOUT + LOGO */}
           <div className="flex flex-col items-center md:items-start">
             <motion.img
-              src={logo}
+              src="/images/logo.png"
               className="w-24 h-24 rounded-3xl shadow-xl border border-white/10 backdrop-blur-xl"
               initial={{ opacity: 0, scale: 0.7 }}
               whileInView={{ opacity: 1, scale: 1 }}

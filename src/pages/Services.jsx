@@ -5,7 +5,7 @@ export default function Services() {
   const services = [
     {
       title: "Wedding Catering",
-      img: "src/assets/Indian_wedding_catering.jpg",
+      img: "/images/Indian_wedding_catering.jpg",
       desc: "Premium catering service for weddings with an authentic Konkan menu, pure taste, and complete event support.",
       price: "₹450 – ₹850 per plate",
       features: [
@@ -17,7 +17,7 @@ export default function Services() {
     },
     {
       title: "Birthday / Family Events",
-      img: "src/assets/birthday_catering _ndia.jpg",
+      img: "/images/birthday_catering_india.jpg",
       desc: "Perfect catering for birthdays, family gatherings, thread ceremonies and special occasions.",
       price: "₹350 – ₹650 per plate",
       features: [
@@ -29,7 +29,7 @@ export default function Services() {
     },
     {
       title: "Corporate Catering",
-      img: "src/assets/corporate_lunch_buffet.jpg",
+      img: "/images/corporate_lunch_buffet.jpg",
       desc: "Professional and hygienic catering for office meetings, corporate lunches and business events.",
       price: "₹300 – ₹700 per plate",
       features: [
@@ -41,7 +41,7 @@ export default function Services() {
     },
     {
       title: "Agro Tourism Stay + Meals",
-      img: "src/assets/Konkan_homestay.jpg",
+      img: "/images/Konkan_homestay.jpg",
       desc: "Lakeside homestay with delicious home-style Konkan meals prepared with love and hygiene.",
       price: "₹1200 – ₹2000 per person",
       features: [
@@ -60,8 +60,7 @@ export default function Services() {
       <section
         className="w-full h-[70vh] bg-cover bg-center relative flex items-center justify-center"
         style={{
-          backgroundImage:
-            "url('src/assets/servies_hero.jpeg  ')",
+          backgroundImage: "url('/images/corporate_lunch_buffet.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -81,19 +80,22 @@ export default function Services() {
           </p>
 
           <div className="mt-6 flex gap-4 justify-center">
-            <a href="tel:9356128719"
-              className="px-6 py-3 bg-premiumRed rounded-xl text-white font-semibold hover:bg-premiumRedDark">
+            <a
+              href="tel:9356128719"
+              className="px-6 py-3 bg-premiumRed rounded-xl text-white font-semibold hover:bg-premiumRedDark"
+            >
               Call Now
             </a>
 
-            <a href="https://wa.me/919356128719"
-              className="px-6 py-3 bg-green-600 rounded-xl text-white font-semibold hover:bg-green-700">
+            <a
+              href="https://wa.me/919356128719"
+              className="px-6 py-3 bg-green-600 rounded-xl text-white font-semibold hover:bg-green-700"
+            >
               WhatsApp
             </a>
           </div>
         </motion.div>
       </section>
-
 
       {/* SERVICES LIST */}
       <div className="max-w-6xl mx-auto px-6 mt-16">
@@ -153,7 +155,6 @@ export default function Services() {
         </div>
       </div>
 
-
       {/* PRICING PACKAGES */}
       <section className="max-w-6xl mx-auto px-6 mt-20">
         <h2 className="text-3xl font-bold text-premiumRed text-center mb-12">
@@ -197,31 +198,6 @@ export default function Services() {
 
         </div>
       </section>
-
-
-      {/* CONTACT CTA */}
-      <div className="text-center mt-20">
-        <h2 className="text-2xl font-bold text-premiumRedDark">
-          Want to book catering or stay?
-        </h2>
-        <p className="text-gray-700 mt-2">Click below to contact us directly</p>
-
-        <div className="mt-6 flex gap-4 justify-center">
-          <a
-            href="tel:9356128719"
-            className="px-6 py-3 bg-premiumRed text-white rounded-xl font-semibold hover:bg-premiumRedDark"
-          >
-            Call Now
-          </a>
-
-          <a
-            href="https://wa.me/919356128719"
-            className="px-6 py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700"
-          >
-            WhatsApp
-          </a>
-        </div>
-      </div>
 
     </div>
   );

@@ -8,8 +8,7 @@ export default function Contact() {
       <section
         className="w-full h-[45vh] bg-cover bg-center relative flex items-center justify-center"
         style={{
-          backgroundImage:
-            "url('src/assets/Konkan_homestay.jpg')",
+          backgroundImage: "url('/images/Konkan_homestay.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -63,8 +62,12 @@ export default function Contact() {
               <span className="text-premiumRed text-3xl">📞</span>
               <p>
                 <strong>Phone:</strong><br />
-                <a href="tel:+919356128719" className="text-premiumRedDark underline">9356128719</a><br />
-                <a href="tel:+918983911425" className="text-premiumRedDark underline">8983911425</a>
+                <a href="tel:+919356128719" className="text-premiumRedDark underline">
+                  9356128719
+                </a><br />
+                <a href="tel:+918983911425" className="text-premiumRedDark underline">
+                  8983911425
+                </a>
               </p>
             </div>
 

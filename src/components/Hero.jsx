@@ -10,13 +10,17 @@ export default function Hero() {
       <motion.div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('src/assets/Konkan_lake_sunset.jpg')",
+          backgroundImage: "url('/images/Konkan_lake_sunset.jpg')",
           filter: "brightness(0.55)",
         }}
         initial={{ scale: 1 }}
         animate={{ scale: 1.12 }}
-        transition={{ duration: 15, repeat: Infinity, repeatType: "reverse", ease: "easeOut" }}
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeOut",
+        }}
       />
 
       {/* Gradient Overlay */}
@@ -43,7 +47,7 @@ export default function Hero() {
           </motion.span>
         </motion.h1>
 
-        {/* SUBTEXT STAGGER */}
+        {/* SUBTEXT */}
         <motion.p
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,7 +84,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* WAVY BORDER ANIMATION BELOW */}
+      {/* WAVY BORDER ANIMATION */}
       <motion.svg
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

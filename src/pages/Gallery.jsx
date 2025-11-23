@@ -6,18 +6,21 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 
 export default function Gallery() {
 
+    /* ------------------------------
+       IMAGE LIST (PUBLIC/images/)
+    -------------------------------*/
     const allImages = [
-        { src: "src/assets/Catering1.jpg", tag: "Catering" },
-        { src: "src/assets/Events.jpg", tag: "Events" },
-        { src: "src/assets/Catering2.jpg", tag: "Catering" },
-        { src: "src/assets/Homestay1.jpg", tag: "Homestay" },
-        { src: "src/assets/catering3.jpg", tag: "Catering" },
-        { src: "src/assets/Nature1.jpg", tag: "Nature" },
-        { src: "src/assets/Homestay2.jpg", tag: "Homestay" },
-        { src: "src/assets/Nature2.jpg", tag: "Nature" },
-        { src: "src/assets/Homestay3.jpg", tag: "Homestay" },
-        { src: "src/assets/Homestay4.jpg", tag: "Homestay" },
-        { src: "src/assets/Homestay5.jpg", tag: "Homestay" }
+        { src: "/images/Catering1.jpg", tag: "Catering" },
+        { src: "/images/Events.jpg", tag: "Events" },
+        { src: "/images/Catering2.jpg", tag: "Catering" },
+        { src: "/images/Homestay1.jpg", tag: "Homestay" },
+        { src: "/images/catering3.jpg", tag: "Catering" },
+        { src: "/images/Nature1.jpg", tag: "Nature" },
+        { src: "/images/Homestay2.jpg", tag: "Homestay" },
+        { src: "/images/Nature2.jpg", tag: "Nature" },
+        { src: "/images/Homestay3.jpg", tag: "Homestay" },
+        { src: "/images/Homestay4.jpg", tag: "Homestay" },
+        { src: "/images/Homestay5.jpg", tag: "Homestay" }
     ];
 
     const filters = ["All", "Catering", "Events", "Homestay", "Nature"];
@@ -31,13 +34,14 @@ export default function Gallery() {
             ? allImages
             : allImages.filter((img) => img.tag === category);
 
-    // Tilt Hover Effect
+    /* ------------------------------
+       3D Tilt Animation
+    -------------------------------*/
     const handleTilt = (e) => {
         const card = e.currentTarget;
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-
         const midX = rect.width / 2;
         const midY = rect.height / 2;
 
@@ -54,7 +58,7 @@ export default function Gallery() {
     return (
         <div className="bg-softRedBg min-h-screen pb-28">
 
-            {/* PAGE TITLE */}
+            {/* -------------------- PAGE TITLE -------------------- */}
             <div className="text-center pt-20">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-premiumRedDark">
                     Our Gallery
@@ -64,7 +68,7 @@ export default function Gallery() {
                 </p>
             </div>
 
-            {/* FILTER BUTTONS */}
+            {/* -------------------- FILTER BUTTONS -------------------- */}
             <div className="flex flex-wrap justify-center gap-4 mt-10">
                 {filters.map((f, i) => (
                     <button
@@ -81,7 +85,7 @@ export default function Gallery() {
                 ))}
             </div>
 
-            {/* GALLERY GRID */}
+            {/* -------------------- GALLERY GRID -------------------- */}
             <div className="max-w-6xl mx-auto px-6 mt-12">
                 <div className="columns-1 sm:columns-2 md:columns-3 gap-5 space-y-5">
 
@@ -109,7 +113,7 @@ export default function Gallery() {
                 </div>
             </div>
 
-            {/* LIGHTBOX VIEW */}
+            {/* -------------------- LIGHTBOX -------------------- */}
             {open && (
                 <Lightbox
                     open={open}

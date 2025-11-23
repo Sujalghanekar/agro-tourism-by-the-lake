@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png"; // change path if needed
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,7 +50,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
           <motion.img
-            src={logo}
+            src="/images/logo.png"
             alt="logo"
             className="h-12 w-auto drop-shadow-md shine-effect"
             whileHover={{ scale: 1.07 }}
