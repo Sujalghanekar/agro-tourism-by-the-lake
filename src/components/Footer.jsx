@@ -38,7 +38,7 @@ export default function Footer() {
             />
 
             <h3 className="text-2xl font-bold text-white mt-4 tracking-wide">
-              Shantai By The Lake
+              Agro Tourism By The Lake
             </h3>
 
             <p className="mt-4 text-gray-300 leading-relaxed max-w-sm">

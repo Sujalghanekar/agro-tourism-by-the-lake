@@ -38,18 +38,6 @@ export default function Services() {
         "Healthy Menu Options",
         "Delivery + Setup Support"
       ]
-    },
-    {
-      title: "Agro Tourism Stay + Meals",
-      img: "/images/Konkan_homestay.jpg",
-      desc: "Lakeside homestay with delicious home-style Konkan meals prepared with love and hygiene.",
-      price: "₹1200 – ₹2000 per person",
-      features: [
-        "Veg + Non-Veg Meals",
-        "Morning Breakfast Included",
-        "Clean Rooms",
-        "Peaceful Nature Location"
-      ]
     }
   ];
 
@@ -100,7 +88,7 @@ export default function Services() {
       {/* SERVICES LIST */}
       <div className="max-w-6xl mx-auto px-6 mt-16">
         <h2 className="text-3xl font-bold text-premiumRed text-center mb-12">
-          Catering & Homestay Services
+          Catering Services
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -155,45 +143,41 @@ export default function Services() {
         </div>
       </div>
 
-      {/* PRICING PACKAGES */}
+
+      {/* 🔥 NEW – ROOM DAY PLAN SECTION */}
       <section className="max-w-6xl mx-auto px-6 mt-20">
         <h2 className="text-3xl font-bold text-premiumRed text-center mb-12">
-          Catering Packages
+          Stay Packages (Non A/C)
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* SILVER */}
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center border border-gray-300">
-            <h3 className="text-xl font-bold text-premiumRed mb-2">Silver Package</h3>
-            <p className="font-bold text-gray-700">₹350 – ₹500 per plate</p>
-            <ul className="mt-4 text-sm text-gray-600 space-y-2">
-              <li>Basic Veg Meals</li>
-              <li>2 Sabji + Rice + Roti</li>
-              <li>Pickup & Delivery</li>
-            </ul>
+          {/* PLAN 1 */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg border-l-8 border-premiumRed">
+            <h3 className="text-2xl font-bold text-premiumRedDark">24 Hours – All Food Included</h3>
+            <p className="text-gray-600 mt-2">Veg or Non-Veg food available</p>
+            <p className="text-3xl font-bold text-premiumRed mt-4">₹2500</p>
           </div>
 
-          {/* GOLD */}
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center border border-premiumRed">
-            <h3 className="text-xl font-bold text-premiumRedDark mb-2">Gold Package</h3>
-            <p className="font-bold text-gray-700">₹500 – ₹700 per plate</p>
-            <ul className="mt-4 text-sm text-gray-600 space-y-2">
-              <li>Veg / Non-Veg Meals</li>
-              <li>Starter + Main Course</li>
-              <li>Event Setup Support</li>
-            </ul>
+          {/* PLAN 2 */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg border-l-8 border-premiumRed">
+            <h3 className="text-2xl font-bold text-premiumRedDark">24 Hours – 1 Time Meal</h3>
+            <p className="text-gray-600 mt-2">Lunch OR Dinner</p>
+            <p className="text-3xl font-bold text-premiumRed mt-4">₹2000</p>
           </div>
 
-          {/* PREMIUM */}
-          <div className="bg-white p-6 rounded-2xl shadow-md text-center border border-yellow-400">
-            <h3 className="text-xl font-bold text-yellow-600 mb-2">Premium Package</h3>
-            <p className="font-bold text-gray-700">₹700 – ₹950 per plate</p>
-            <ul className="mt-4 text-sm text-gray-600 space-y-2">
-              <li>Special Konkan Menu</li>
-              <li>Live Counters</li>
-              <li>Full Event Management</li>
-            </ul>
+          {/* PLAN 3 */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg border-l-8 border-premiumRed">
+            <h3 className="text-2xl font-bold text-premiumRedDark">12 Hours – 1 Meal</h3>
+            <p className="text-gray-600 mt-2">Lunch OR Dinner</p>
+            <p className="text-3xl font-bold text-premiumRed mt-4">₹1500</p>
+          </div>
+
+          {/* PLAN 4 */}
+          <div className="bg-white p-6 rounded-2xl shadow-lg border-l-8 border-premiumRed">
+            <h3 className="text-2xl font-bold text-premiumRedDark">12 Hours – Room Only</h3>
+            <p className="text-gray-600 mt-2">No Food</p>
+            <p className="text-3xl font-bold text-premiumRed mt-4">₹1000</p>
           </div>
 
         </div>
